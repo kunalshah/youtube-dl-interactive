@@ -1,4 +1,6 @@
-Docker version to run youtube-dl interactively.
+Run youtube-dl interactively through Docker.
+
+To reduce the size, this image is based on Alpine now. Current image size is 198 MB compared to 967 MB of previous version based on Debian.
 
 
 ### Credits
@@ -9,7 +11,7 @@ Docker version to run youtube-dl interactively.
 
 ### How to use this docker image
 
-The image uses `/data` volume where videos will be stored, so the user will need provide the folder that would be mapped to `/data`
+The image uses `/data` folder as a volume where videos will be stored. Hence the user needs to provide the folder that would be mapped to `/data`
 
 For example, 
 to download the youtube video `https://www.youtube.com/watch?v=37vz9Jdw5A8` and store it in `/Users/kunalshah/Downloads/videos` folder:
@@ -25,8 +27,15 @@ https://www.youtube.com/watch?v=37vz9Jdw5A8
 
 
 ### youtube-dl-interactive usage
+
 For youtube-dl-interactive usage information, see [youtube-dl-interactive repo](https://github.com/synox/youtube-dl-interactive) or [youtube-dl-interactive package on npm](https://www.npmjs.com/package/youtube-dl-interactive)
 
 
+### Source of this image
+
+See https://github.com/kunalshah/youtube-dl-interactive
+
+
 ### Issues
-If there's an problem running this docker image, please report issue [here](https://github.com/kunalshah/youtube-dl-interactive/issues)
+
+If the problem occurs while running this docker image, please report issue [here](https://github.com/kunalshah/youtube-dl-interactive/issues)
